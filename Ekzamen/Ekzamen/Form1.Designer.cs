@@ -36,13 +36,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
-            this.btnRazmer = new System.Windows.Forms.Button();
-            this.numRazmer = new System.Windows.Forms.NumericUpDown();
             this.btnPath = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.txtPath = new System.Windows.Forms.TextBox();
+            this.btnFill = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRazmer)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -67,7 +65,7 @@
             this.txtMax.Location = new System.Drawing.Point(211, 42);
             this.txtMax.Name = "txtMax";
             this.txtMax.Size = new System.Drawing.Size(100, 20);
-            this.txtMax.TabIndex = 2;
+            this.txtMax.TabIndex = 14;
             // 
             // txtSpeed
             // 
@@ -113,23 +111,6 @@
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // btnRazmer
-            // 
-            this.btnRazmer.Location = new System.Drawing.Point(358, 45);
-            this.btnRazmer.Name = "btnRazmer";
-            this.btnRazmer.Size = new System.Drawing.Size(75, 23);
-            this.btnRazmer.TabIndex = 8;
-            this.btnRazmer.Text = "Задать";
-            this.btnRazmer.UseVisualStyleBackColor = true;
-            this.btnRazmer.Click += new System.EventHandler(this.btnRazmer_Click);
-            // 
-            // numRazmer
-            // 
-            this.numRazmer.Location = new System.Drawing.Point(232, 45);
-            this.numRazmer.Name = "numRazmer";
-            this.numRazmer.Size = new System.Drawing.Size(120, 20);
-            this.numRazmer.TabIndex = 9;
-            // 
             // btnPath
             // 
             this.btnPath.Location = new System.Drawing.Point(317, 113);
@@ -156,16 +137,25 @@
             this.txtPath.Size = new System.Drawing.Size(204, 20);
             this.txtPath.TabIndex = 10;
             // 
+            // btnFill
+            // 
+            this.btnFill.Location = new System.Drawing.Point(338, 67);
+            this.btnFill.Name = "btnFill";
+            this.btnFill.Size = new System.Drawing.Size(75, 23);
+            this.btnFill.TabIndex = 13;
+            this.btnFill.Text = "Обновить";
+            this.btnFill.UseVisualStyleBackColor = true;
+            this.btnFill.Click += new System.EventHandler(this.btnFill_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(680, 437);
+            this.Controls.Add(this.btnFill);
             this.Controls.Add(this.btnPath);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtPath);
-            this.Controls.Add(this.numRazmer);
-            this.Controls.Add(this.btnRazmer);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -177,7 +167,6 @@
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRazmer)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -193,11 +182,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.Button btnRazmer;
-        private System.Windows.Forms.NumericUpDown numRazmer;
         private System.Windows.Forms.Button btnPath;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtPath;
+        private System.Windows.Forms.Button btnFill;
     }
 }
 

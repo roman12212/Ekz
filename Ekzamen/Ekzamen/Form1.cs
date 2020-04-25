@@ -23,6 +23,7 @@ namespace Ekzamen
             label2.Visible = false;
             label3.Visible = false;
             btnSave.Visible = false;
+            btnFill.Visible = false;
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -40,19 +41,6 @@ namespace Ekzamen
             else { MessageBox.Show("Все поля обязательны к заполнению!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         }
 
-        private void btnRazmer_Click(object sender, EventArgs e)
-        {
-            int RazmerMassiva = Convert.ToInt32(numRazmer.Value);
-            txtMax.Visible = true;
-            txtModel.Visible = true;
-            txtSpeed.Visible = true;
-            label1.Visible = true;
-            label2.Visible = true;
-            label3.Visible = true;
-            btnSave.Visible = true;
-            btnRazmer.Visible = false;
-            numRazmer.Visible = false;
-        }
         private void FillData()
         {
             dataGridView1.DataSource = WorkFile.ReadTable();
@@ -66,12 +54,25 @@ namespace Ekzamen
                 {
                     txtPath.Text = ofd.FileName;
                     WorkFile.FilePath = ofd.FileName;
+                    txtMax.Visible = true;
+                    txtModel.Visible = true;
+                    txtSpeed.Visible = true;
+                    label1.Visible = true;
+                    label2.Visible = true;
+                    label3.Visible = true;
+                    btnSave.Visible = true;
+                    btnFill.Visible = true;
                 }
                 catch
                 {
                     MessageBox.Show("Формат не соответсвует требуемому.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void btnFill_Click(object sender, EventArgs e)
+        {
+            FillData();
         }
     }
 }
