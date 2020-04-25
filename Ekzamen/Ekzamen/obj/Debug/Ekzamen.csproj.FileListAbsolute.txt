@@ -1,0 +1,9 @@
+C:\Users\NIKITA\source\repos\Ekzamen\Ekzamen\bin\Debug\Ekzamen.exe.config
+C:\Users\NIKITA\source\repos\Ekzamen\Ekzamen\bin\Debug\Ekzamen.exe
+C:\Users\NIKITA\source\repos\Ekzamen\Ekzamen\bin\Debug\Ekzamen.pdb
+C:\Users\NIKITA\source\repos\Ekzamen\Ekzamen\obj\Debug\Ekzamen.csprojAssemblyReference.cache
+C:\Users\NIKITA\source\repos\Ekzamen\Ekzamen\obj\Debug\Ekzamen.Form1.resources
+C:\Users\NIKITA\source\repos\Ekzamen\Ekzamen\obj\Debug\Ekzamen.Properties.Resources.resources
+C:\Users\NIKITA\source\repos\Ekzamen\Ekzamen\obj\Debug\Ekzamen.csproj.GenerateResource.cache
+C:\Users\NIKITA\source\repos\Ekzamen\Ekzamen\obj\Debug\Ekzamen.exe
+C:\Users\NIKITA\source\repos\Ekzamen\Ekzamen\obj\Debug\Ekzamen.pdb
